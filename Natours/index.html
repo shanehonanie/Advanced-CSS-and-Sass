@@ -15,7 +15,7 @@
 		<title>Natours | Exciting tours for adventurous people</title>
 	</head>
 	<body>
-		<div class="navigaion">
+		<div class="navigation">
 			<input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
 			<label for="navi-toggle" class="navigation__button">
@@ -363,56 +363,91 @@
 
 			<section class="section-book">
 				<div class="row">
-						<div class="book">
-								<div class="book__form">
-										<form action="#" class="form">
-												<div class="u-margin-bottom-medium">
-														<h2 class="heading-secondary">
-																Start booking now
-														</h2>
-												</div>
-
-												<div class="form__group">
-														<input type="text" class="form__input" placeholder="Full name" id="name" required>
-														<label for="name" class="form__label">Full name</label>
-												</div>
-
-												<div class="form__group">
-														<input type="email" class="form__input" placeholder="Email address" id="email" required>
-														<label for="email" class="form__label">Email address</label>
-												</div>
-
-												<div class="form__group u-margin-bottom-medium">
-														<div class="form__radio-group">
-																<input type="radio" class="form__radio-input" id="small" name="size">
-																<label for="small" class="form__radio-label">
-																		<span class="form__radio-button"></span>
-																		Small tour group
-																</label>
-														</div>
-
-														<div class="form__radio-group">
-																<input type="radio" class="form__radio-input" id="large" name="size">
-																<label for="large" class="form__radio-label">
-																		<span class="form__radio-button"></span>
-																		Large tour group
-																</label>
-														</div>
-												</div>
-
-												<div class="form__group">
-														<button class="btn btn--green">Next step &rarr;</button>
-												</div>
-										</form>
+					<div class="book">
+						<div class="book__form">
+							<form action="#" class="form">
+								<div class="u-margin-bottom-medium">
+									<h2 class="heading-secondary">
+										Start booking now
+									</h2>
 								</div>
+
+								<div class="form__group">
+									<input
+										type="text"
+										class="form__input"
+										placeholder="Full name"
+										id="name"
+										required
+									/>
+									<label for="name" class="form__label">Full name</label>
+								</div>
+
+								<div class="form__group">
+									<input
+										type="email"
+										class="form__input"
+										placeholder="Email address"
+										id="email"
+										required
+									/>
+									<label for="email" class="form__label">Email address</label>
+								</div>
+
+								<div class="form__group u-margin-bottom-medium">
+									<div class="form__radio-group">
+										<input
+											type="radio"
+											class="form__radio-input"
+											id="small"
+											name="size"
+										/>
+										<label for="small" class="form__radio-label">
+											<span class="form__radio-button"></span>
+											Small tour group
+										</label>
+									</div>
+
+									<div class="form__radio-group">
+										<input
+											type="radio"
+											class="form__radio-input"
+											id="large"
+											name="size"
+										/>
+										<label for="large" class="form__radio-label">
+											<span class="form__radio-button"></span>
+											Large tour group
+										</label>
+									</div>
+								</div>
+
+								<div class="form__group">
+									<button class="btn btn--green">Next step &rarr;</button>
+								</div>
+							</form>
 						</div>
+					</div>
 				</div>
-		</section>
+			</section>
 		</main>
 
 		<footer class="footer">
 			<div class="footer__logo-box">
-				<img src="img/logo-green-2x.png" alt="Full Logo" class="footer__logo" />
+				<picture class="footer__logo">
+					<source
+						srcset="
+							img/logo-green-small-1x.png 1x,
+							img/logo-green-small-2x.png 2x
+						"
+						media="(max-width: 37.5rem)"
+					/>
+					<img
+						srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+						alt="Full Logo"
+						class="footer__logo"
+					/>
+				</picture>
 			</div>
 			<div class="row">
 				<div class="col-1-of-2">
@@ -441,10 +476,7 @@
 						Built by <a href="#" class="footer__link">Shane Honanie</a> for a
 						project to his online course.
 						<a href="" class="footer__link">Advanced CSS and Sass</a>. Copyright
-						&copy by Jonas Schmedtmann. Your are 100% allowed to use this
-						website for both personal and commercial use, but NOT to claim as
-						your own design. A credit to the original author is highly
-						appreciated.
+						&copy by Jonas Schmedtmann.
 					</p>
 				</div>
 			</div>
